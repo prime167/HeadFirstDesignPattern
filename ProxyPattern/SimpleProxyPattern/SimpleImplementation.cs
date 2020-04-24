@@ -1,6 +1,6 @@
 ﻿namespace ProxyPattern.SimpleProxyPattern
 {
-    internal class ProxyContainer
+    class ProxyContainer
     {
         private class ComplexProtectedExpensiveResource
         {
@@ -45,9 +45,9 @@
     }
 
     // The Client
-    internal class ProxyPattern : ProxyContainer
+    class ProxyPattern : ProxyContainer
     {
-        public static void DoWork()
+        static void DoWork()
         {
             var simpleProxy = new SimpleProxy("password");
             simpleProxy.DoWork();

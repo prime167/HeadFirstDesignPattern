@@ -4,9 +4,9 @@ using System;
 
 namespace ProxyPattern
 {
-    internal class Program
+    class Program
     {
-        private static void Main()
+        static void Main(string[] args)
         {
             CastleDynamicProxyTest.Test();
             Console.ReadKey();
